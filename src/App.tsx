@@ -289,7 +289,7 @@ const SavingsCard = () => (
 
 const HeroVisual = () => {
   return (
-    <div className="relative w-full max-w-[600px] mx-auto">
+    <div className="relative w-full max-w-[750px] mx-auto">
       {/* Background Decorative Blob */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#3b82f6]/10 via-transparent to-[#0a2540]/5 rounded-full blur-[100px] -z-10" />
 
@@ -300,14 +300,15 @@ const HeroVisual = () => {
         transition={{ duration: 1 }}
         className="relative z-10"
       >
-        <div className="aspect-[4/3] relative rounded-2xl overflow-hidden">
+        <div className="relative">
           <img
             src={heroImage}
             alt="Productive Business Professional"
-            className="absolute inset-0 w-full h-full object-cover object-center filter drop-shadow-2xl"
+            className="w-full h-auto object-contain mix-blend-multiply dark:mix-blend-screen"
           />
-          {/* Bottom fade to blend into background */}
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-slate-950 to-transparent z-10" />
+          {/* Fade all edges into site background */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-slate-950 via-transparent to-white/40 dark:to-slate-950/40 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/70 dark:from-slate-950/70 via-transparent to-white/70 dark:to-slate-950/70 pointer-events-none" />
         </div>
       </motion.div>
 
