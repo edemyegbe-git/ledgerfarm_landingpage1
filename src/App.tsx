@@ -1,14 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-declare global {
-  interface Window {
-    Calendly: { initPopupWidget: (options: { url: string }) => void };
-  }
-}
-
-const openCalendly = () => {
-  window.Calendly.initPopupWidget({ url: "https://calendly.com/team-theledgerfarm/30min" });
-};
 import heroImage from "./assets/hero.png";
 import { motion, useMotionValue, useSpring, AnimatePresence } from "motion/react";
 import { 
@@ -130,7 +120,7 @@ const Navbar = () => {
               </div>
               +1 734 934 0488
             </a>
-            <Button onClick={openCalendly} className="w-full h-14 text-lg rounded-2xl bg-[#0a2540] dark:bg-white dark:text-[#0a2540]">Book a Call</Button>
+            <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} className="w-full h-14 text-lg rounded-2xl bg-[#0a2540] dark:bg-white dark:text-[#0a2540]">Book a Call</Button>
           </motion.div>
         )}
       </AnimatePresence>
@@ -415,7 +405,7 @@ export default function App() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-8 sm:gap-10 items-center justify-center lg:justify-start">
-                <Button onClick={openCalendly} size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white group transition-all duration-300 shadow-xl">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white group transition-all duration-300 shadow-xl">
                   Book a Free Call
                 </Button>
                 
@@ -525,7 +515,7 @@ export default function App() {
             <p className="text-lg sm:text-xl md:text-2xl text-[#475569] dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium mb-10 sm:mb-12">
               Our white-label bookkeeping, payroll, and reporting team gives your firm the capacity to scale without the hassle and chaos of building a bigger in-house team.
             </p>
-            <Button onClick={openCalendly} size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all duration-300 shadow-xl">
+            <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all duration-300 shadow-xl">
               Get Started Now
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -690,7 +680,7 @@ export default function App() {
                 <p className="text-base sm:text-lg text-[#475569] dark:text-slate-400 mb-8 leading-relaxed font-medium">
                   Work with a team of CPAs and bookkeepers with experience from major firms. We operate behind the scenes under your brand, helping you maintain consistency and quality without the need for micromanagement.
                 </p>
-                <Button onClick={openCalendly} className="w-full sm:w-auto rounded-full bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all px-10 h-14 font-bold shadow-lg">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} className="w-full sm:w-auto rounded-full bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all px-10 h-14 font-bold shadow-lg">
                   Book A Call
                 </Button>
               </motion.div>
@@ -886,7 +876,7 @@ export default function App() {
               <p className="text-lg text-[#475569]">Book a call today and get your first dedicated accounting pod launched in under 7 days.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-               <Button onClick={openCalendly} size="lg" className="rounded-2xl px-10 h-16 bg-[#0a2540] hover:bg-[#3b82f6] text-white font-bold transition-all shadow-xl group flex items-center gap-3">
+               <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} size="lg" className="rounded-2xl px-10 h-16 bg-[#0a2540] hover:bg-[#3b82f6] text-white font-bold transition-all shadow-xl group flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
                   <Calendar size={18} />
                 </div>
@@ -1203,7 +1193,7 @@ export default function App() {
               Ready to work <span className="text-[#3b82f6]">with us?</span>
             </h2>
 
-            <Button onClick={openCalendly} size="lg" className="w-full sm:w-auto rounded-full px-10 h-16 text-lg font-bold bg-white text-[#0a2540] hover:bg-[#3b82f6] hover:text-white transition-all duration-300 shadow-xl relative z-10 group">
+            <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} size="lg" className="w-full sm:w-auto rounded-full px-10 h-16 text-lg font-bold bg-white text-[#0a2540] hover:bg-[#3b82f6] hover:text-white transition-all duration-300 shadow-xl relative z-10 group">
               Book a Free Call
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
