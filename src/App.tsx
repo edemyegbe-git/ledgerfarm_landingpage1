@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
               <span className="hidden xl:inline">+1 734 934 0488</span>
             </a>
-            <Button variant="outline" size="sm" className="rounded-full px-6 border-[#0a2540] text-[#0a2540] font-bold hover:bg-[#0a2540] hover:text-white transition-all whitespace-nowrap uppercase tracking-widest text-[11px]">Get started</Button>
+            <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} variant="outline" size="sm" className="rounded-full px-6 border-[#0a2540] text-[#0a2540] font-bold hover:bg-[#0a2540] hover:text-white transition-all whitespace-nowrap uppercase tracking-widest text-[11px]">Get started</Button>
           </div>
 
           <button className="lg:hidden w-10 h-10 flex items-center justify-center text-[#0a2540] dark:text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -938,7 +938,7 @@ export default function App() {
                     <span className="text-[10px] text-[#475569]">billed monthly</span>
                   </div>
                 </div>
-                <Button className="w-full rounded-2xl h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all mb-10 shadow-lg">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} className="w-full rounded-2xl h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all mb-10 shadow-lg">
                   Add Capacity
                 </Button>
                 <ul className="space-y-4 mb-8">
@@ -991,7 +991,7 @@ export default function App() {
                     <span className="text-[10px] text-[#475569]">plus per-client fees</span>
                   </div>
                 </div>
-                <Button className="w-full rounded-2xl h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all mb-10 shadow-lg">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} className="w-full rounded-2xl h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all mb-10 shadow-lg">
                   Start Scaling
                 </Button>
                 <ul className="space-y-4 mb-8">
@@ -1141,10 +1141,10 @@ export default function App() {
                 As a specialized white-label partner, we are dedicated to delivering reliable capacity in exactly 7 days and providing a transparent, risk-free onboarding process.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                <Button variant="outline" className="w-full sm:w-auto rounded-full px-8 h-12 border-[#0a2540] text-[#0a2540] font-bold hover:bg-[#0a2540] hover:text-white transition-all">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} variant="outline" className="w-full sm:w-auto rounded-full px-8 h-12 border-[#0a2540] text-[#0a2540] font-bold hover:bg-[#0a2540] hover:text-white transition-all">
                   More Questions
                 </Button>
-                <Button variant="ghost" className="w-full sm:w-auto text-[#0a2540] font-bold hover:bg-transparent hover:text-[#3b82f6]">
+                <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} variant="ghost" className="w-full sm:w-auto text-[#0a2540] font-bold hover:bg-transparent hover:text-[#3b82f6]">
                   Contact Us
                 </Button>
               </div>
