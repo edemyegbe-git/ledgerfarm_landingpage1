@@ -289,7 +289,7 @@ const SavingsCard = () => (
 
 const HeroVisual = () => {
   return (
-    <div className="relative w-full max-w-[750px] mx-auto">
+    <div className="relative w-full mx-auto">
       {/* Background Decorative Blob */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#3b82f6]/10 via-transparent to-[#0a2540]/5 rounded-full blur-[100px] -z-10" />
 
@@ -304,11 +304,11 @@ const HeroVisual = () => {
           <img
             src={heroImage}
             alt="Productive Business Professional"
-            className="w-full h-auto object-contain mix-blend-multiply dark:mix-blend-screen"
+            className="w-full h-auto object-contain"
           />
-          {/* Fade all edges into site background */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-slate-950 via-transparent to-white/40 dark:to-slate-950/40 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/70 dark:from-slate-950/70 via-transparent to-white/70 dark:to-slate-950/70 pointer-events-none" />
+          {/* Fade edges into site background */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-slate-950 via-transparent to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/50 dark:from-slate-950/50 via-transparent to-white/50 dark:to-slate-950/50 pointer-events-none" />
         </div>
       </motion.div>
 
@@ -368,7 +368,7 @@ export default function App() {
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
         <GridShimmer />
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 sm:gap-16 lg:gap-24 items-center relative z-10">
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 sm:gap-12 lg:gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
