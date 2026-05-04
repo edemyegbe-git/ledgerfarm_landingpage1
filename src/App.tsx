@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import heroImage from "./assets/hero.png";
 import { motion, useMotionValue, useSpring, AnimatePresence } from "motion/react";
 import { 
   CheckCircle2, 
@@ -301,7 +302,7 @@ const HeroVisual = () => {
       >
         <div className="aspect-[4/3] relative rounded-2xl overflow-hidden">
           <img
-            src="/hero.png"
+            src={heroImage}
             alt="Productive Business Professional"
             className="absolute inset-0 w-full h-full object-cover object-center filter drop-shadow-2xl"
           />
