@@ -299,12 +299,11 @@ const HeroVisual = () => {
         transition={{ duration: 1 }}
         className="relative z-10"
       >
-        <div className="aspect-square relative">
-          <img 
-            src="https://images.unsplash.com/photo-1519085185758-189f3344400b?auto=format&fit=crop&q=80&w=800" 
-            alt="Productive Business Professional" 
-            className="absolute inset-0 w-full h-full object-contain filter drop-shadow-2xl"
-            referrerPolicy="no-referrer"
+        <div className="aspect-[4/3] relative rounded-2xl overflow-hidden">
+          <img
+            src="/hero.png"
+            alt="Productive Business Professional"
+            className="absolute inset-0 w-full h-full object-cover object-center filter drop-shadow-2xl"
           />
           {/* Bottom fade to blend into background */}
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-slate-950 to-transparent z-10" />
