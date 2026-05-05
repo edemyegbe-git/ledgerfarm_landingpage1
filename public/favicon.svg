@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0a2540"/>
+
+  <!-- Bar chart logo mark (3 columns, mirroring the site logo) -->
+  <!-- Left column: 4 bars -->
+  <rect x="10" y="28" width="8" height="4" rx="2" fill="white"/>
+  <rect x="10" y="34" width="8" height="4" rx="2" fill="white"/>
+  <rect x="10" y="40" width="8" height="4" rx="2" fill="white"/>
+  <rect x="10" y="46" width="8" height="4" rx="2" fill="white"/>
+
+  <!-- Middle column: 3 bars -->
+  <rect x="22" y="34" width="8" height="4" rx="2" fill="white"/>
+  <rect x="22" y="40" width="8" height="4" rx="2" fill="white"/>
+  <rect x="22" y="46" width="8" height="4" rx="2" fill="white"/>
+
+  <!-- Right column: 6 bars -->
+  <rect x="34" y="16" width="8" height="4" rx="2" fill="#3b82f6"/>
+  <rect x="34" y="22" width="8" height="4" rx="2" fill="#3b82f6"/>
+  <rect x="34" y="28" width="8" height="4" rx="2" fill="white"/>
+  <rect x="34" y="34" width="8" height="4" rx="2" fill="white"/>
+  <rect x="34" y="40" width="8" height="4" rx="2" fill="white"/>
+  <rect x="34" y="46" width="8" height="4" rx="2" fill="white"/>
+
+  <!-- "L" letter hint (bottom horizontal bar) -->
+  <rect x="10" y="52" width="32" height="4" rx="2" fill="#3b82f6"/>
+</svg>
