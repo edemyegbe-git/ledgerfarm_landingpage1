@@ -1103,8 +1103,8 @@ export default function App() {
           </div>
 
           <div className="text-center mb-16 sm:mb-24">
-            <Button size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all shadow-[0_20px_40px_rgba(59,130,246,0.2)]">
-              See How It Works
+            <Button onClick={() => window.open("https://calendly.com/team-theledgerfarm/30min", "_blank")} size="lg" className="w-full sm:w-auto rounded-full px-12 h-16 text-lg font-bold bg-[#0a2540] hover:bg-[#3b82f6] text-white transition-all shadow-[0_20px_40px_rgba(59,130,246,0.2)]">
+              Let's Talk
             </Button>
           </div>
 
